@@ -8,5 +8,12 @@ conda activate fabric
 pip install fabric
 ```
 
+You can use the [Fabric Command-line interface (CLI)](https://docs.fabfile.org/en/latest/cli.html) to run commands remotely:
+```bash
+fab -H 10.10.0.102 -- uname -a
+```
+Will run uname on 10.10.0.102.
+
+
 # References
  * [Fabric](https://docs.fabfile.org) - Pythonic remote execution
